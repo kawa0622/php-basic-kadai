@@ -12,10 +12,10 @@
 function sort_2way($array, $order) {
     if ($order == 'asc') {
         sort($array); // 昇順
-        echo "昇順ソート:\n<br>";
+        echo "昇順にソートします。\n<br>";
     } else {
         rsort($array); // 降順
-        echo "降順ソート:\n<br>";
+        echo "降順にソートします。\n<br>";
     }
 
     foreach ($array as $value) {
