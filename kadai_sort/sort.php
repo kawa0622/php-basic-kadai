@@ -10,7 +10,7 @@
   <p>
   <?php
 function sort_2way($array, $order) {
-    if ($order == 'asc') {
+    if ($order) {
         sort($array); // 昇順
         echo "昇順にソートします。\n<br>";
     } else {
@@ -29,8 +29,8 @@ function sort_2way($array, $order) {
 $nums = [15, 4, 18, 23, 10];
 
 // 昇順 → 降順 の順で関数を2回呼び出し
-sort_2way($nums, 'asc');
-sort_2way($nums, 'desc');
+sort_2way($nums, TRUE);
+sort_2way($nums, FALSE);
 ?>
 
   </p>
